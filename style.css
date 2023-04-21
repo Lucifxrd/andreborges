@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.mainsect>h1 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.mainsect>h1>span {
+    background-color: aliceblue;
+    line-height: 1;
+
+}
+.mainsect {
+    
+    background-repeat: no-repeat;
+    background-color: rgba(61, 61, 61, 0.397);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+.andreinfo>img {
+    margin-top: 8vh;
+    width:20vw;
+    height: 25vh;
+    border-radius: 50%;
+    outline: solid rgb(82, 82, 83) .2rem;
+    margin-left: 3rem;
+}
+
+
+.andreinfo {
+    margin-bottom: 10rem;
+    background-image: url('./imgs/OIG.jpg');
+    
+    background-repeat: no-repeat;
+    height: 10rem;
+    overflow: visible;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    
+}
+
+.andreinfo>ul {
+    margin-right: 60vw;
+    margin-top: 18vh;
+    padding: auto 0;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+.andreinfo>ul>li {
+    width: 60vw;
+}
+.andreinfo>ul>li>p {
+    font-family: cursive;
+    font-size: 1.2vw;
+}
+.andreinfo>ul>li>h2{
+    font-family: cursive;
+}
+.andreinfo>ul>li>h4{
+    text-align: right;
+}
+
+.livrosdiv {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    width: 100%;
+    border-radius: 5%;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+    padding-top: 2vh;
+}
+.livro1 {
+    display: flex;
+    width: 56vw;
+    height: 37vh;
+    background-color: rgba(2, 2, 82, 0.356);
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5%;
+    background-size: cover;
+    background-clip: border-box;
+
+}
+.livro1>p {
+    width: 15vw;
+    font-family: cursive;
+    font-size: 1.5vh;
+    color: white;
+}
+.livrosdiv>p>span {
+    background-color: aliceblue;
+    line-height: 1.5;
+
+}
+.livro1>a>img {
+    width: 20rem;
+    height: 25rem;
+    margin-block: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 0;
+}
+
+footer {
+    
+    margin: 3rem;
+    background-color: rgba(0, 0, 255, 0.514);
+    text-align: center;
+    margin-inline: auto;
+    border-radius: 10%;
+    outline: rgb(80, 5, 5) solid .5rem;
+    width: fit-content;
+}
+footer>p{
+    color:rgb(78, 61, 61);
+    font-size: .8rem;
+}
