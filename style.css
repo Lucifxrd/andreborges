@@ -97,7 +97,8 @@ html {
 .andreinfo>ul>li>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vh;
-    padding-block: 3vh;
+    padding-top: 1vh;
+    padding-bottom:2vh;
 }
 .andreinfo>ul>li>h2{
     font-family: cursive;
