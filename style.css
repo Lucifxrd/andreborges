@@ -92,11 +92,12 @@ html {
 }
 .andreinfo>ul>li {
     width: 60vw;
-    margin-bottom: 5vh;
+    
 }
 .andreinfo>ul>li>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vh;
+    margin-bottom: 5vh;
 }
 .andreinfo>ul>li>h2{
     font-family: cursive;
