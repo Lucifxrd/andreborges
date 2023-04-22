@@ -102,6 +102,8 @@ html {
 }
 .andreinfo>ul>li>h4{
     text-align: right;
+    font-size: 2vh;
+    transform: translate(0, -3vh);
 }
 
 .livrosdiv {
