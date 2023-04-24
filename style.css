@@ -32,9 +32,18 @@
     box-sizing: border-box;
     margin: 0;
 }
-html {
+html, body {
+    scroll-behavior: smooth;
+    scroll-snap-type: y;
     font-size: 62.5%;
-}
+  }
+  
+
+  @media (max-width: 800px) {
+    html, body {
+    overflow-x: hidden;
+    }
+  }
 .mainsect>h1 {
     color: white;
     text-align: center;
@@ -56,7 +65,6 @@ html {
 
     display: flex;
     flex-direction: column;
-    margin-top: 60vh;
 }
 .andreinfo>img {
     margin-top: 8vh;
@@ -76,7 +84,6 @@ html {
     height: 10rem;
     overflow: visible;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     width: 100%;
     display: flex;
@@ -91,12 +98,20 @@ html {
     list-style-type: none;
 }
 .andreinfo>ul>li {
-    width: 60vw;
-    padding-block: 3vh;
+    width: 300%;
+}
+.sobre {
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+}
+.sobre>p {
+    font-size: 4vw;
 }
 .andreinfo>ul>li>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vh;
+    font-weight: 300;
     padding-top: 1vh;
     padding-bottom:2vh;
 }
@@ -140,7 +155,7 @@ html {
 
 }
 .livro1>a>img {
-    width: 25vw;
+    width: 30%;
     height: 30vh;
     display: flex;
     margin-inline: auto;
@@ -151,16 +166,57 @@ html {
 }
 
 footer {
-    
+    padding-block: 5%;
     margin: 3rem;
-    background-color: rgba(0, 0, 255, 0.514);
+    background-color: rgba(22, 104, 2, 0.836);
     text-align: center;
     margin-inline: auto;
-    border-radius: 10%;
-    outline: rgb(80, 5, 5) solid .5rem;
-    width: fit-content;
+
+    outline: rgb(80, 5, 5) solid 1rem;
+    width: 100%;
+}
+footer>div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vw;
+    padding-top: 3vw;
+    justify-content: center;
+}
+footer>div>a {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2vw;
+}
+footer>div>a>img {
+    width: 10vw;
+    animation: light linear infinite 5S;
+    height: 100%;
 }
 footer>p{
     color:rgb(78, 61, 61);
     font-size: .8rem;
+}
+
+@keyframes light {
+    0% {
+        filter: drop-shadow(16px 16px 20px red);
+    }
+    10% {
+        filter: drop-shadow(16px 16px 20px red) invert(10%);
+    }
+    25% {
+        filter: drop-shadow(16px 16px 20px red) invert(20%);
+    }
+    45% {
+        filter: drop-shadow(16px 16px 20px red) invert(50%);
+    }
+    60% {
+        filter: drop-shadow(16px 16px 20px red) invert(60%);
+    }
+    90% {
+        filter: drop-shadow(16px 16px 20px red) invert(75%);
+    }
+    100% {
+        filter: drop-shadow(16px 16px 20px red) invert(100%);
+    }
 }
