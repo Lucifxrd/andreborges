@@ -46,7 +46,7 @@ html, body {
     }
   }
 .mainsect>h1 {
-    color: white;
+    color: red;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 10vh;
