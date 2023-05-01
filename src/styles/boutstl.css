@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav>ul>li {
+    float: left;
+    
+}
+nav>ul>li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    font-size: 2vw;
+    text-decoration: none;
+}
+nav>ul>li a:hover {
+    background-color: #111;
+}
+header {
+    font-size: 1.5rem;
+}
+
+section {
+    background-image: url("../../imgs/64.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat-y;
+    color:white;
+}
+section>div {
+    background-color: #000000c7;
+    border-radius: 2%;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+footer>h2 {
+    color: red;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+footer {
+    padding-block: 5%;
+    margin: 3rem;
+    background-color: rgba(22, 104, 2, 0.836);
+    text-align: center;
+    margin-inline: auto;
+
+    outline: rgb(80, 5, 5) solid 1rem;
+    width: 100%;
+}
+footer>div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vw;
+    padding-top: 3vw;
+    justify-content: center;
+}
+footer>div>a {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2vw;
+}
+footer>div>a>img {
+    width: 10vw;
+    outline: red solid .3rem;
+    border-radius: 50%;
+    animation: light linear infinite 5S;
+    height: 100%;
+}
+footer>p{
+    color:rgb(78, 61, 61);
+    font-size: .8rem;
+}
+
+@keyframes light {
+    0% {
+        filter: drop-shadow(16px 16px 20px red);
+    }
+    10% {
+        filter: drop-shadow(16px 16px 20px red) invert(10%);
+    }
+    25% {
+        filter: drop-shadow(16px 16px 20px red) invert(20%);
+    }
+    45% {
+        filter: drop-shadow(16px 16px 20px red) invert(50%);
+    }
+    60% {
+        filter: drop-shadow(16px 16px 20px red) invert(60%);
+    }
+    90% {
+        filter: drop-shadow(16px 16px 20px red) invert(75%);
+    }
+    100% {
+        filter: drop-shadow(16px 16px 20px red) invert(100%);
+    }
+}
