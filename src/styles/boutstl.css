@@ -33,7 +33,7 @@ header {
 }
 
 section {
-    background-image: url("../../imgs/64.png");
+    background-image: url("https://andreborges.vercel.app/imgs/64.png");
     background-size:contain;
     background-position: center;
     background-repeat: repeat-y;
@@ -87,6 +87,16 @@ footer>div>a>img {
 footer>p{
     color:rgb(78, 61, 61);
     font-size: .8rem;
+}
+div#player>iframe {
+  width: 70vw;
+  height: 50vh;
+}
+div#player{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes light {
