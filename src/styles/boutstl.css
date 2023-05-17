@@ -122,3 +122,9 @@ div#player{
         filter: drop-shadow(16px 16px 20px red) invert(100%);
     }
 }
+
+img:hover {
+    width: 50vw;
+    height: 50vh;
+    outline: inset .8rem rgb(119, 93, 128);
+}
