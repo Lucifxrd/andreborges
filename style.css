@@ -84,7 +84,7 @@ html, body {
     background-repeat: no-repeat;
     background-color: rgba(61, 61, 61, 0.397);
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
 }
@@ -206,11 +206,10 @@ footer>h2 {
 }
 footer {
     padding-block: 5%;
-    margin: 3rem;
     background-color: rgba(22, 104, 2, 0.836);
     text-align: center;
     margin-inline: auto;
-
+    margin-top: 25vh;
     outline: rgb(80, 5, 5) solid 1rem;
     width: 100%;
 }
