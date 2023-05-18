@@ -123,7 +123,7 @@ div#player{
     }
 }
 
-img:hover {
+.sobreimg:hover {
     width: 50vw;
     height: 60vh;
     outline: inset .8rem rgb(119, 93, 128);

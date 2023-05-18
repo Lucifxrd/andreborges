@@ -162,7 +162,7 @@ html, body {
     display: flex;
     aspect-ratio: 1;
     block-size: 30rem;
-    width: 200vw;
+    width: 230vw;
     height: 60vh;
     background-color: rgba(1, 1, 20, 0.884);
     flex-direction: column;
@@ -172,7 +172,8 @@ html, body {
 }
 .livro1>h3 {
     color: red;
-    font-size: 3vw;
+    font-size: 2vw;
+
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -182,6 +183,8 @@ html, body {
     font-size: 150%;
     width: 100%;
     color: white;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 .livrosdiv>p>span {
     background-color: aliceblue;
