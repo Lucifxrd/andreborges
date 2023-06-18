@@ -15,6 +15,7 @@ nav>ul {
 }
 nav>ul>li {
     float: left;
+
     
 }
 nav>ul>li>a {
@@ -46,7 +47,10 @@ section>div {
     text-align: center;
 }
 
-
+section>div>ul {
+    list-style: upper-roman;
+    font-size: larger;
+}
 
 
 
