@@ -29,8 +29,10 @@ nav>ul>li>a {
 nav>ul>li a:hover {
     background-color: #111;
 }
-header {
-    font-size: 1.5rem;
+header{
+    text-align: center;
+    display: block;
+    align-items: center;
 }
 
 section {
