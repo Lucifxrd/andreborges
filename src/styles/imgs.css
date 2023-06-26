@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav>ul>li {
+    float: left;
+
+    
+}
+nav>ul>li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    font-size: 3vw;
+    text-decoration: none;
+}
+nav>ul>li a:hover {
+    background-color: #111;
+}
+header{
+    text-align: center;
+    display: block;
+    align-items: center;
+    margin-inline: auto;
+}
+header>img{
+    width:20rem;
+    height: 150%;
+}
+
+body {
+    background-image: url("https://source.unsplash.com/random/?rio%20de%20janeiro");
+    background-position: center;
+}
+section {
+    background-color: rgba(17, 17, 17, 0.691);
+    width: 100%;
+}
+section>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.504);
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 1rem;
+    padding: .5rem;
+}
+section>div>img {
+    margin-inline: auto;
+}
+section>div>img:nth-child(1) {
+    width: 35rem;
+    height: 25rem;
+
+}
+section>div:nth-child(2)>img {
+    width: 100%;
+    height: 50rem;
+    border-radius: 10%;
+}
