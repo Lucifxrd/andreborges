@@ -61,13 +61,27 @@ section>div{
 section>div>img {
     margin-inline: auto;
 }
+section>div>figcaption {
+    font-size: 1.6rem;
+    margin-top: .5rem;
+}
 section>div>img:nth-child(1) {
     width: 35rem;
     height: 25rem;
 
 }
 section>div:nth-child(2)>img {
-    width: 100%;
-    height: 50rem;
+    width: 60%;
+    height: 30rem;
+    border-radius: 10%;
+}
+section>div:nth-child(3)>img {
+    width: 70%;
+    height: 40rem;
+    border-radius: 10%;
+}
+section>div:nth-child(4)>img {
+    width: 70%;
+    height: 30rem;
     border-radius: 10%;
 }
