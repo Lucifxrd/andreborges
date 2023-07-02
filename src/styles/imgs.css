@@ -71,16 +71,11 @@ section>div>img:nth-child(1) {
 
 }
 section>div:nth-child(2)>img {
-    width: 60%;
-    height: 30rem;
-    border-radius: 10%;
-}
-section>div:nth-child(3)>img {
     width: 70%;
     height: 30rem;
     border-radius: 10%;
 }
-section>div:nth-child(4)>img {
+section>div:nth-child(3)>img {
     width: 70%;
     height: 30rem;
     border-radius: 10%;
