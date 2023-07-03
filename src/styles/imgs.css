@@ -34,6 +34,9 @@ header{
     display: block;
     align-items: center;
     margin-inline: auto;
+    background-color: white;
+    width: fit-content;
+    outline: #111 .5rem solid;
 }
 header>img{
     width:20rem;
@@ -47,6 +50,7 @@ body {
 section {
     background-color: rgba(17, 17, 17, 0.691);
     width: 100%;
+    color: white;
 }
 section>div{
     display: flex;
