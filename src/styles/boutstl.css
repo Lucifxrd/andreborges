@@ -6,6 +6,29 @@ html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indc {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  line-height: 1.5;
+  box-sizing:border-box;
+  width: fit-content;
+  margin-inline: auto;
+  border: 2px solid rgb(147, 11, 11);
+}
+
+a {
+    font-size: 2rem;
+    size: 2rem;
+    color: #000;
+    text-decoration: none;
+}
 nav>ul {
     list-style-type: none;
     margin: 0;
