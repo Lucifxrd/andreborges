@@ -4,138 +4,365 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José andré borges</title>
-    <link rel="stylesheet" href="../styles/boutstl.css">
+    <title>Sobre André Borges</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #3b82f6;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: -0.5rem;
+            top: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #3b82f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .gallery img {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+    </style>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">Sobre mim:</a></li>
-            <li><a href="../../index.html">Livros</a></li>
-            <li><a href="../pages/imagens.html">Imagens</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>A Trajetoria de andré borges:<br><u>Indice:</u></h1>
-        <ul>
-            <li class="indc"><a href="#prisoes">Prisões</a></li>
-            <li class="indc"><a href="#dtdra">A Ditadura</a></li>
-            <li class="indc"><a href="#fglm">Da fuga à luta armada</a></li>
-            <li class="indc"><a href="#armred">Da luta armada à redemocratização
-            </a></li>
-            <li class="indc"><a href="#jornalismo">Liberdade e jornalismo</a></li>
-          </ul>
-        <ul>
-        <h2 style="color: red;">Amigos na Cinelândia</h2 >
-        <img src="../../imgs/AmigosNaCinelandia.jpg.jpg" alt="Amigos na Cinelândia" width="400" height="300">
-        <figcaption>André borges e Willian da silva lima, este ultimo autor do livro "400 contra um""400X1"</figcaption>
-        <h3>José Andre Borges: jornalista brasileiro que lutou contra a ditadura militar</h3>
-        <p>ele viveu uma história de resistência e luta contra a ditadura militar no Brasil. <br>Em seu livro "A Fuga - rumo à luta armada contra a ditadura", ele conta como escapou da prisão e se juntou à guerrilha urbana nos anos 1960.</p>
-    </header>
-    <section id="prisoes">
-        <div >
-            <p>André foi um jornalista e membro da ABI (Associação Brasileira de Imprensa).<br>Ele ficou 21 anos atrás das grades, passando por diversas delegacias e penitenciárias: </p>
-            <ul>
-                <li>
-                    <h4>Lemos de Brito(do complexo frei caneca):</h4>
-                   <img class="sobreimg" src="https://andreborges.vercel.app/imgs/lemos%20brito%20colrida.png" alt="Imagem da penitenciaria lemos de brito" srcset="" width="150" height="150">
-                   <img class="sobreimg" src="https://andreborges.vercel.app/imgs/Corredor%20da%20galeria%20na%20Divisão%20Especial%20%20da%20Frrei%20Caneca.jpg" alt="Imagem da galeria lemos de brito" srcset="" width="150" height="150">
-                   
-                </li>
-                <li>
-                    <h4>Fortaleza de Santa Cruz:</h4>
-                    <img class="sobreimg" src="../../imgs/fortaleza2.PNG" alt="fortaleza" width="150" height="150" srcset="">
-                    <img class="sobreimg" src="https://andreborges.vercel.app/imgs/Fortaleza_de_santa_cruz.jpg" alt="fortaleza santa cruz" width="150" height="150" srcset="">
-                    <h5>Durante sua prisão na Fortaleza, ele se casou:</h5>
-                    <img class="sobreimg" src="../../imgs/fotocasamento.jpg" alt="Casamento de andré na fortaleza de_santa_cruz" height="130" width="130"srcset="">
-                    <img class="sobreimg" src="../../imgs/casamentofest.jpg" alt="Festa do casamento na capela da fortaleza" height="130" width="130"srcset="">
-                    <img class="sobreimg" src="../../imgs/casamento13.jpg" alt="Conguge escutando ao juiz" height="130" width="130"srcset="">
-                    <img class="sobreimg" src="../../imgs/casamento3.jpg" alt="Conguge bebendo champagne" height="130" width="130"srcset="">
-                    
-                    <figcaption>ao chegar na capela, andre aguardou por sua esposa janaide, quando ela entrou vestida de vermelho criou-se um clima de afronta no ar e um silencio tomava conta do lugar, mas no fim tudo ocorreu bem apesar do silencio constragedor, por conta de apenas um vestido vermelho.(vestido este que foi preparado pelos visitantes e familia dos presos da fortazela, improvisado na hora)</figcaption>
-                </li>
-                <li>
-                    <h4>Ilha Grande:(prisão destruida no governo do brizola)</h4>
-                    <img class="sobreimg" src="https://andreborges.vercel.app/imgs/Foto%20da%20Ilha%20Grande.jpg" alt="antiga ilha grande" width="150" height="150" srcset="">
-                    <img class="sobreimg" src="https://andreborges.vercel.app/imgs/7cdf9e09fb1a8763533f22e6745fd05e2f38357ead64c07fff76146b.jpg" alt="jose andre borges, sonia santos e milton" width="150" height="150">
-                    
-                    
-                </li>
-            </ul>
-        </div>
-    <div class="cartaelza">
-            <h1>MEMÓRIA DOS TEMPOS TENEBROSOS</h1>
-            <h3>ELZA Barreto</h3>
-
-    <p>Você é um herói dos anos de chumbo amigo poeta! Me partiu o peito ao ler sua carta, mas confesso que ao mesmo tempo me sinto tranquila em ver que você é sobrevivente daqueles tempos tenebrosos!</p>
-
-    <p>Reencontrei virtualmente algumas pessoas que militaram conosco na clandestinidade após mais de 30 anos, alguns já se foram e outras ainda vivem, mas perdemos contatos novamente, sem saber o que aconteceu com elas!</p>
-
-    <p>Um deles foi exilado no Chile, só fui saber nomes originais de todos(as) após a anistia quando saiu no jornal Classe Operária e na TV! Procurei em páginas e grupos por anos pelos codinomes, com muito custo consegui contatos com poucos(as)! Às vezes me dá uma nostalgia e nó no peito por não ter mais notícias de ambos!</p>
-
-    
-
-    <p>Um abraço solidário para você e aos seus!<br><u>carta enviada por elza quando andré já em liberdade</u></p>
-
-
-    
-        </div>
-        
-        <div >
-            <h2 id="dtdra">A Ditadura</h2>
-            
-            <p>A trajetória de André Borges é, no mínimo, intrigante. Ele foi preso em abril de 1958, aos 25 anos, por assalto à mão armada.
-                <br>Durante esse período, ele se tornou um leitor voraz e se conscientizou politicamente e também se tornou-se o elo entre os presos comuns e os presos políticos, que começaram a ser encarcerados após o golpe de 1964.
-                <br>Apesar de estar perto de sua libertação ele participou com outros nove detentos em uma fuga armada ocorrida na Penitenciária Lemos Brito em 1969.
-                <br>A fuga foi para participar efetivamente da luta armada e a expropriação de um banco foi o primeiro e único ato político de André, preso dois meses após a fuga.<br>Ele permaneceu preso por 21 anos e foi libertado apenas em 1979 após cumprir sua pena.</p>
-        </div>
-        <div id="fglm">
-            <h2>A fuga</h2>
-            <p>Em <span>1969</span>, ele liderou uma fuga armada da Penitenciária Lemos de Brito, no Rio de Janeiro, junto com outros 11 detentos. Eles cavaram um túnel de 60 metros e escaparam para a rua. André Borges foi o último a sair e ainda ajudou um companheiro ferido.</p>
-            <h3>Da fuga à luta armada</h3>
-            <p>Após a fuga, Ele se integrou à luta armada contra a ditadura.<br>Ele atuou na Frente de Libertação Nacional (FLN), uma organização que pretendia criar uma frente única de resistência ao regime.</p>
-            <h3>Vida clandestina</h3>
-            <p>Ele participou de diversas ações armadas, como assaltos a bancos, explosões de bombas e tiroteios com a polícia e chegou a ser ferido várias vezes e teve que se submeter a cirurgias clandestinas, também viveu na clandestinidade, usando vários codinomes e disfarces.</p>
-        </div>
-        <div >
-            <h2 id="armred">Da luta armada à redemocratização</h2>
-            <p>André Borges sobreviveu à repressão e ao fim da luta armada no início dos anos 1970.<br>tendo sido beneficiado da Lei da Anistia apenas em 1979 e retomou sua vida civil</p>
-            <div id="player">
-                <h3 style="color:red;text-align:center;">Luta pela Anistia, Greve de fome:</h3>
-                <iframe width="100" height="100" src="https://www.youtube.com/embed/jiJR7EuvxG4" title="Luta pela anistia: Greve de fome 1979 penitenciaria lemos brito" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; web-share" allowfullscreen>
-                </iframe>
-                <h3 style="color:red;text-align:center;">Após 21 anos de prisão andré foi liberto, 3 dias antes da greve de fome da anistia.</h3>
-                <p style="color:red;text-align:center;">(em uma sexta feira 13 de sorte)</p>
-                <img class="sobreimg" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzhkODRiM2I2OGNiMWZkNzcwYzRmYzAyMzRhMmRlOTlmZjk5ZTAwYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/Q6d7CM1Arba7Ho5XRh/giphy.gif" width="150" height="150" alt="André sendo liberto apos 21 anos preso"></img>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://i.ibb.co/qD5ps9m/348428947-266127355882174-7633590753350201670-n.jpg" alt="Logo" class="h-10 rounded-full">
+                <span class="text-xl font-bold">André Borges</span>
             </div>
-            <p id="jornalismo">quando se tornou jornalista profissional ele trabalhou em diversos veículos de comunicação</p>
-            <p>Foi um dos fundadores do PDT(um partido trabalhista) e membro do Diretorio estadual do Rio de janeiro. Ele trabalhou como assessor do Desipe(Departamento estadual do sistema penitenciario) e posteriormente transferido para o Desire(Departamento de Ressocialização do sistema penitenciario) no governo de Brizola no Rio de Janeiro, onde atuou na área de Administração Penitenciária.
-            </p>
-            <img src="../../imgs/desire.jpg" alt="andre trabalhou como assessor no desire durante governo do brizola" width="250" height="150" class="sobreimg">
-            <figcaption>Foto da quarta capa do livro da ilha grande ao poder</figcaption>
-        </div>
-        <h3 style="color:red;text-align:center; background-color: aliceblue;">André Borges é um exemplo dos que viveram na pele os horrores da ditadura militar e que usou sua experiência para denunciar os crimes do regime e defender a democracia no Brasil.
-        </h3>
-    </section>
-    <footer>
-        <h2>Gostou do nosso trabalho?, Contatos abaixo</h2>
-        <div>
-         <!-- Contacts(facebook,instagram, youtube) -->
-            <a href="https://www.facebook.com/profile.php?id=100004435623416">
-                <img src="../../imgs/face.png" alt="facebook icon">
-                
-            </a>
-            <a href="https://www.youtube.com/@andreborgessobrevivente/videos">
-                <img src="../../imgs/youtub.png" alt="youtube icon">
-                
-            </a>
-            <a href="https://www.instagram.com/andreborges9657/">
-                <img src="../../imgs/insta.png" alt="instagram icon">
-                
-            </a>
-            
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#prisoes" class="hover:text-blue-400 transition">Prisões</a>
+                <a href="#dtdra" class="hover:text-blue-400 transition">Ditadura</a>
+                <a href="#fglm" class="hover:text-blue-400 transition">Fuga</a>
+                <a href="#armred" class="hover:text-blue-400 transition">Redemocratização</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
         
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 hover:bg-gray-700 rounded">Home</a>
+                <a href="#prisoes" class="block px-3 py-2 hover:bg-gray-700 rounded">Prisões</a>
+                <a href="#dtdra" class="block px-3 py-2 hover:bg-gray-700 rounded">Ditadura</a>
+                <a href="#fglm" class="block px-3 py-2 hover:bg-gray-700 rounded">Fuga</a>
+                <a href="#armred" class="block px-3 py-2 hover:bg-gray-700 rounded">Redemocratização</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-r from-gray-900 to-blue-900 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">A Trajetória de André Borges</h1>
+                <p class="text-xl md:text-2xl mb-8">Jornalista brasileiro que lutou contra a ditadura militar</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#prisoes" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Prisões</a>
+                    <a href="#dtdra" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Ditadura</a>
+                    <a href="#fglm" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Fuga</a>
+                    <a href="#armred" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Redemocratização</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Introduction -->
+        <section class="max-w-4xl mx-auto mb-20 animate-fade-in">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://andreborges.vercel.app/imgs/AmigosNaCinelandia.jpg.jpg" alt="André Borges e Willian da Silva Lima" class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Amigos na Cinelândia</h2>
+                    <p class="text-gray-600 mb-4">André Borges e Willian da Silva Lima, este último autor do livro "400 contra um"</p>
+                    <p class="text-lg text-gray-700">
+                        José André Borges é um jornalista brasileiro que lutou contra a ditadura militar. Em seu livro "A Fuga - rumo à luta armada contra a ditadura", ele conta como escapou da prisão e se juntou à guerrilha urbana nos anos 1960.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="max-w-4xl mx-auto">
+            <!-- Prisões -->
+            <div id="prisoes" class="mb-20 animate-fade-in" style="animation-delay: 0.2s;">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Prisões</h2>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                    <p class="text-lg text-gray-700 mb-6">
+                        André foi um jornalista e membro da ABI (Associação Brasileira de Imprensa). Ele ficou 21 anos atrás das grades, passando por diversas delegacias e penitenciárias:
+                    </p>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Lemos de Brito (do complexo Frei Caneca)</h3>
+                            <div class="gallery mb-4">
+                                <img src="https://andreborges.vercel.app/imgs/lemos%20brito%20colrida.png" alt="Penitenciária Lemos de Brito" class="rounded-lg">
+                                <img src="https://andreborges.vercel.app/imgs/Corredor%20da%20galeria%20na%20Divisão%20Especial%20%20da%20Frrei%20Caneca.jpg" alt="Galeria Lemos de Brito" class="rounded-lg">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Fortaleza de Santa Cruz</h3>
+                            <div class="gallery mb-4">
+                                <img src="https://andreborges.vercel.app/imgs/fortaleza2.PNG" alt="Fortaleza de Santa Cruz" class="rounded-lg">
+                                <img src="https://andreborges.vercel.app/imgs/Fortaleza_de_santa_cruz.jpg" alt="Fortaleza de Santa Cruz" class="rounded-lg">
+                            </div>
+                            <h4 class="font-bold mb-2 text-gray-700">Durante sua prisão na Fortaleza, ele se casou:</h4>
+                            <div class="gallery">
+                                <img src="https://andreborges.vercel.app/imgs/fotocasamento.jpg" alt="Casamento de André na Fortaleza" class="rounded-lg">
+                                <img src="https://andreborges.vercel.app/imgs/casamentofest.jpg" alt="Festa do casamento na capela da fortaleza" class="rounded-lg">
+                                <img src="https://andreborges.vercel.app/imgs/casamento13.jpg" alt="Cônjuge escutando ao juiz" class="rounded-lg">
+                                <img src="https://andreborges.vercel.app/imgs/casamento3.jpg" alt="Cônjuge bebendo champagne" class="rounded-lg">
+                            </div>
+                            <p class="text-gray-600 mt-4">
+                                Ao chegar na capela, André aguardou por sua esposa Janaide. Quando ela entrou vestida de vermelho, criou-se um clima de afronta no ar e um silêncio tomou conta do lugar, mas no fim tudo ocorreu bem apesar do silêncio constrangedor, por conta de apenas um vestido vermelho (vestido este que foi preparado pelos visitantes e familiares dos presos da fortaleza, improvisado na hora).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fas fa-island-tropical"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Ilha Grande (prisão destruída no governo de Brizola)</h3>
+                            <div class="gallery">
+                                <img src="https://andreborges.vercel.app/imgs/Foto%20da%20Ilha%20Grande.jpg" alt="Antiga Ilha Grande" class="rounded-lg">
+                                <img src="https://andreborges.vercel.app/imgs/7cdf9e09fb1a8763533f22e6745fd05e2f38357ead64c07fff76146b.jpg" alt="José André Borges, Sônia Santos e Milton" class="rounded-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-8">
+                    <h3 class="text-xl font-bold mb-3 text-red-800">MEMÓRIA DOS TEMPOS TENEBROSOS</h3>
+                    <h4 class="font-semibold mb-2 text-red-700">Elza Barreto</h4>
+                    <p class="text-gray-700 mb-3">
+                        Você é um herói dos anos de chumbo amigo poeta! Me partiu o peito ao ler sua carta, mas confesso que ao mesmo tempo me sinto tranquila em ver que você é sobrevivente daqueles tempos tenebrosos!
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        Reencontrei virtualmente algumas pessoas que militaram conosco na clandestinidade após mais de 30 anos, alguns já se foram e outras ainda vivem, mas perdemos contatos novamente, sem saber o que aconteceu com elas!
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        Um deles foi exilado no Chile, só fui saber nomes originais de todos(as) após a anistia quando saiu no jornal Classe Operária e na TV! Procurei em páginas e grupos por anos pelos codinomes, com muito custo consegui contatos com poucos(as)! Às vezes me dá uma nostalgia e nó no peito por não ter mais notícias de ambos!
+                    </p>
+                    <p class="text-gray-700">
+                        Um abraço solidário para você e aos seus!<br>
+                        <span class="text-sm italic">Carta enviada por Elza quando André já estava em liberdade</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- A Ditadura -->
+            <div id="dtdra" class="mb-20 animate-fade-in" style="animation-delay: 0.4s;">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">A Ditadura</h2>
+                
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <p class="text-lg text-gray-700 mb-6">
+                        A trajetória de André Borges é, no mínimo, intrigante. Ele foi preso em abril de 1958, aos 25 anos, por assalto à mão armada.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Durante esse período, ele se tornou um leitor voraz e se conscientizou politicamente e também se tornou-se o elo entre os presos comuns e os presos políticos, que começaram a ser encarcerados após o golpe de 1964.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Apesar de estar perto de sua libertação, ele participou com outros nove detentos em uma fuga armada ocorrida na Penitenciária Lemos Brito em 1969.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        A fuga foi para participar efetivamente da luta armada e a expropriação de um banco foi o primeiro e único ato político de André, preso dois meses após a fuga. Ele permaneceu preso por 21 anos e foi libertado apenas em 1979 após cumprir sua pena.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- A Fuga -->
+            <div id="fglm" class="mb-20 animate-fade-in" style="animation-delay: 0.6s;">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">A Fuga</h2>
+                
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <p class="text-lg text-gray-700 mb-6">
+                        Em <span class="font-bold text-blue-600">1969</span>, ele liderou uma fuga armada da Penitenciária Lemos de Brito, no Rio de Janeiro, junto com outros 11 detentos. Eles cavaram um túnel de 60 metros e escaparam para a rua. André Borges foi o último a sair e ainda ajudou um companheiro ferido.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Da fuga à luta armada</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Após a fuga, ele se integrou à luta armada contra a ditadura. Ele atuou na Frente de Libertação Nacional (FLN), uma organização que pretendia criar uma frente única de resistência ao regime.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Vida clandestina</h3>
+                    <p class="text-lg text-gray-700">
+                        Ele participou de diversas ações armadas, como assaltos a bancos, explosões de bombas e tiroteios com a polícia e chegou a ser ferido várias vezes e teve que se submeter a cirurgias clandestinas, também viveu na clandestinidade, usando vários codinomes e disfarces.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Redemocratização -->
+            <div id="armred" class="animate-fade-in" style="animation-delay: 0.8s;">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Da luta armada à redemocratização</h2>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 mb-8">
+                    <p class="text-lg text-gray-700 mb-6">
+                        André Borges sobreviveu à repressão e ao fim da luta armada no início dos anos 1970. Tendo sido beneficiado da Lei da Anistia apenas em 1979, retomou sua vida civil.
+                    </p>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                        <h3 class="text-xl font-bold mb-4 text-center text-red-600">Luta pela Anistia: Greve de fome (1979)</h3>
+                        <div class="flex flex-col items-center">
+                            <iframe class="w-full max-w-2xl h-96 rounded-lg shadow-md mb-4" src="https://www.youtube.com/embed/jiJR7EuvxG4" title="Luta pela anistia: Greve de fome 1979 penitenciaria lemos brito" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                            <p class="text-lg text-center text-gray-700 mb-4">
+                                Após 21 anos de prisão, André foi liberto, 3 dias antes da greve de fome da anistia.
+                                <br><span class="text-sm italic">(em uma sexta-feira 13 de sorte)</span>
+                            </p>
+                            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzhkODRiM2I2OGNiMWZkNzcwYzRmYzAyMzRhMmRlOTlmZjk5ZTAwYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/Q6d7CM1Arba7Ho5XRh/giphy.gif" alt="André sendo liberto após 21 anos preso" class="rounded-lg shadow-md w-48">
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg text-gray-700 mb-6" id="jornalismo">
+                        Quando se tornou jornalista profissional, ele trabalhou em diversos veículos de comunicação.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Foi um dos fundadores do PDT (um partido trabalhista) e membro do Diretório Estadual do Rio de Janeiro. Ele trabalhou como assessor do Desipe (Departamento Estadual do Sistema Penitenciário) e posteriormente transferido para o Desire (Departamento de Ressocialização do Sistema Penitenciário) no governo de Brizola no Rio de Janeiro, onde atuou na área de Administração Penitenciária.
+                    </p>
+                    
+                    <div class="mt-6 flex justify-center">
+                        <img src="https://andreborges.vercel.app/imgs/desire.jpg" alt="André trabalhou como assessor no Desire durante governo do Brizola" class="rounded-lg shadow-md max-w-full h-auto">
+                    </div>
+                    <p class="text-center text-sm text-gray-500 mt-2">Foto da quarta capa do livro "Da Ilha Grande ao Poder"</p>
+                </div>
+                
+                <div class="bg-red-100 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-center text-red-800 mb-4">
+                        André Borges é um exemplo dos que viveram na pele os horrores da ditadura militar e que usou sua experiência para denunciar os crimes do regime e defender a democracia no Brasil.
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold mb-4">Gostou do nosso trabalho?</h2>
+                <p class="text-gray-400 mb-6">Entre em contato através das nossas redes sociais</p>
+                
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.facebook.com/profile.php?id=100004435623416" class="text-white hover:text-blue-400 transition text-2xl">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@andreborgessobrevivente/videos" class="text-white hover:text-red-400 transition text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/andreborges9657/" class="text-white hover:text-pink-400 transition text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2023 André Borges. Todos os direitos reservados.
+                    </p>
+                    
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-sm">Termos de Uso</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-sm">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

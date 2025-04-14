@@ -5,111 +5,637 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://i.ibb.co/qD5ps9m/348428947-266127355882174-7633590753350201670-n.jpg" type="image/x-icon">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <title>Livros de andré borges</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Blog de André Borges</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="./src/pages/about.html">Sobre André</a></li>
-            <li><a href="#">Livros:</a></li>
-            <li><a href="./src/pages/imagens.html">Imagens</a></li>
-        </ul>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://i.ibb.co/qD5ps9m/348428947-266127355882174-7633590753350201670-n.jpg" alt="Logo" class="h-10 rounded-full">
+                <span class="text-xl font-bold">André Borges</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#livros" class="hover:text-blue-400 transition">Livros</a>
+                <a href="#blog" class="hover:text-blue-400 transition">Blog</a>
+                <a href="#sobre" class="hover:text-blue-400 transition">Sobre</a>
+                <a href="#contato" class="hover:text-blue-400 transition">Contato</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 hover:bg-gray-700 rounded">Home</a>
+                <a href="#livros" class="block px-3 py-2 hover:bg-gray-700 rounded">Livros</a>
+                <a href="#blog" class="block px-3 py-2 hover:bg-gray-700 rounded">Blog</a>
+                <a href="#sobre" class="block px-3 py-2 hover:bg-gray-700 rounded">Sobre</a>
+                <a href="#contato" class="block px-3 py-2 hover:bg-gray-700 rounded">Contato</a>
+            </div>
+        </div>
     </nav>
-    <header class="andreinfo">
-        <img src="./imgs/as.jpg" alt="foto de andre" >
-        <ul>
-            <li>
-                <h2>André borges</h2>
-            </li>
-            <li><p>
-                Jornalista<br>Escritor<br>Poeta Sobrevivente
 
-            </p></li>
-        </ul>
-        <img src="https://i.ibb.co/qD5ps9m/348428947-266127355882174-7633590753350201670-n.jpg" alt="caricatura por Carluz">
-        <figcaption><strong>Caricatura por Carluz</strong></figcaption>
+    <!-- Hero Section -->
+    <header id="home" class="relative bg-gradient-to-r from-gray-900 to-blue-900 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">André Borges</h1>
+                <p class="text-xl md:text-2xl mb-6">Jornalista • Escritor • Poeta Sobrevivente</p>
+                <div class="flex space-x-4">
+                    <a href="#blog" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Ver Blog</a>
+                    <a href="#newsletter" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-6 py-3 rounded-lg font-medium transition">Assinar Newsletter</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./imgs/as.jpg" alt="André Borges" class="rounded-full h-64 w-64 object-cover border-4 border-white shadow-xl">
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
     </header>
-    <footer>
-        <h2>Contatos</h2>
-        <div>
-         <!-- Contacts(facebook,instagram, youtube) -->
-            <a href="https://www.facebook.com/profile.php?id=100004435623416">
-                <img src="./imgs/face.png" alt="facebook icon">
-                
-            </a>
-            <a href="https://www.youtube.com/@andreborgessobrevivente/videos">
-                <img src="./imgs/youtub.png" alt="youtube icon">
-                
-            </a>
-            <a href="https://www.instagram.com/andreborges9657/">
-                <img src="./imgs/insta.png" alt="instagram icon">
-                
-            </a>
+
+    <!-- Books Section -->
+    <section id="livros" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Meus Livros</h2>
             
-        </div>
-        
-    </footer>
-    
-    
-    <section class="mainsect">
-        
-        <h1 class="artigo">
-            <span>Livros</span>
-        </h1>
-        
-        <div class="scrollport">
-            <div class="livro1">
-                <h3>Da ilha grande ao poder</h3>
+            <div class="scrollport">
+                <div class="livro1 bg-white rounded-xl shadow-md overflow-hidden w-80 flex-shrink-0">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-600 mb-4">Da ilha grande ao poder</h3>
+                        <a href="./imgs/dailhagrandeaopoder.pdf" class="block mb-4">
+                            <img src="./imgs/umreporterdailhagrande.jpg" alt="capa um reporter da ilha grande ao poder" class="w-full h-48 object-contain mx-auto">
+                        </a>
+                        <p class="text-gray-600 mb-4">
+                            Refere-se à reação das pessoas que o hostilizaram quando foi nomeado assessor do Diretor do Departamento do Sistema Penitenciário...
+                        </p>
+                        <a href="./imgs/dailhagrandeaopoder.pdf" class="text-blue-600 hover:underline">Ler mais</a>
+                    </div>
+                </div>
                 
-                <a href="./imgs/dailhagrandeaopoder.pdf" >
-                    <img src="./imgs/umreporterdailhagrande.jpg" alt="capa um reporter da ilha grande ao poder">
-                </a>
-                <p><span>refere-se à reação das pessoas que o hostilizaram quando foi nomeado assessor do Diretor do Departamento do Sistema Penitenciário -DESIPE, no Governo Brizola. Diziam os mais atrasados que um ex-convicto não podia ocupar o cargo. Que era um absurdo colocar um homem como ele na direção do Orgão. Chegaram mesmo a identificá-lo com as organizações clandestinas de presos, tudo visando sua desmoralização pessoal e o desgaste político do Governo recém-eleito. <u>Agora vejo-o em mais essa empreitada, sempre com conotação política, alem da óbvia visão de futuro, esperando mostrar com este livro sua visão de mundo jornalista, tirando de suas matéroas e entrevistas uma postura dialética da sociedade que, atravéz de suas firmes convicções e com seus companheiros, pretende mudar. <br><strong><i><u>- Márcio Donnici (1984)</u></i></strong></u></span></p>
-            </div>
-            <div class="livro1">
-                <h3>Eterno Amanhã</h3>
-                <a href="./imgs/Eterno amanhã segunda edição (pronto para imprimir).pdf" >
-                    <img src="./imgs/000001.png" alt="eterno amanha">
-                </a>
-                <p><span>A poesia de André Borges encaixa-se nas preocupações de Bachelard e, se não alcança o primado da forma, suas fimbrias são nitidamente sonoras e profundamente doloridas como doem os melhores poemas. "Regressarei à vida - diz André - onde me espera a luta / no corpo / levo o execrável / estigma das grades / no coração / uma esperança nova / na alma / uma paixão que arde: / - Liberdade! Liberdade"!<br><strong><i><u>- José louzeiro</u></i></strong></span></p>
-            </div>
-            <div class="livro1">
-                <h3>A Fuga</h3>
-                <a href="https://www.amazon.com.br/Fuga-Rumo-Armada-Contra-Ditadura/dp/8564833336" >
-                    <img src="https://m.media-amazon.com/images/I/51HvsfKgpNL._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="eterna amanha">
-                </a>
-                <p><span>essa historia é uma tentativa de sintetizar o que foi a ditadura de 1964 que muitas pessoas principalmente a juventude desconhece. então esse livro narra alguns dos episodios que ocorreram lá </span></p>
-            </div>
-            <div class="livro1">
-                <h3>A viagem</h3>
-                <a href="#" >
-                    <img src="./imgs/aviagem.jpg" alt="a viagem">
-                </a>
-                <p><span>Conheci o André militante, escritor e poeta, com admiração. Mas fui conhecê-lo de verdade quando nos tornamos companheiros e amigos na luta contra o racismo participando do <strong>Círculo Palmarino.</strong> Desta vez uma amizade construída não apenas atravéz da política, mas nas conversas nos bares da Cinelândia, nos passeios noturnos admirando a lua cheia na Lapa, tomando sopa e vinho nos diversos bares do Centro.<br><strong><i><u>- Iná Meireles</u></i></strong></span></p>
+                <div class="livro1 bg-white rounded-xl shadow-md overflow-hidden w-80 flex-shrink-0">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-600 mb-4">Eterno Amanhã</h3>
+                        <a href="./imgs/Eterno amanhã segunda edição (pronto para imprimir).pdf" class="block mb-4">
+                            <img src="./imgs/000001.png" alt="eterno amanha" class="w-full h-48 object-contain mx-auto">
+                        </a>
+                        <p class="text-gray-600 mb-4">
+                            A poesia de André Borges encaixa-se nas preocupações de Bachelard e, se não alcança o primado da forma...
+                        </p>
+                        <a href="./imgs/Eterno amanhã segunda edição (pronto para imprimir).pdf" class="text-blue-600 hover:underline">Ler mais</a>
+                    </div>
+                </div>
+                
+                <div class="livro1 bg-white rounded-xl shadow-md overflow-hidden w-80 flex-shrink-0">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-600 mb-4">A Fuga</h3>
+                        <a href="https://www.amazon.com.br/Fuga-Rumo-Armada-Contra-Ditadura/dp/8564833336" class="block mb-4">
+                            <img src="https://m.media-amazon.com/images/I/51HvsfKgpNL._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="a fuga" class="w-full h-48 object-contain mx-auto">
+                        </a>
+                        <p class="text-gray-600 mb-4">
+                            Essa história é uma tentativa de sintetizar o que foi a ditadura de 1964 que muitas pessoas principalmente a juventude desconhece.
+                        </p>
+                        <a href="https://www.amazon.com.br/Fuga-Rumo-Armada-Contra-Ditadura/dp/8564833336" class="text-blue-600 hover:underline">Comprar</a>
+                    </div>
+                </div>
+                
+                <div class="livro1 bg-white rounded-xl shadow-md overflow-hidden w-80 flex-shrink-0">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-red-600 mb-4">A viagem</h3>
+                        <a href="#" class="block mb-4">
+                            <img src="./imgs/aviagem.jpg" alt="a viagem" class="w-full h-48 object-contain mx-auto">
+                        </a>
+                        <p class="text-gray-600 mb-4">
+                            Conheci o André militante, escritor e poeta, com admiração. Mas fui conhecê-lo de verdade quando nos tornamos companheiros...
+                        </p>
+                        <a href="#" class="text-blue-600 hover:underline">Em breve</a>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </section>
-    <div class="sobre">
-        <h2 style="color: red;">Lançamento do livro 400x1</h2 >
-        <img src="./imgs/willianautografando.JPG" alt="Lançamento do livro 400x1" width="400" height="300">
-        <figcaption>André borges e Willian da silva lima, este ultimo autor do livro "400 contra um""400X1"</figcaption>
-        <h1>Sobre André</h1>
-        <p>
-            Sua história é um exemplo de como o povo pode e deve lutar pelos seus direitos e pela sua liberdade, usando todas as formas de resistência possíveis. <strong>Ele nos ensina que a luta política não é apenas uma questão ideológica, mas também de dignidade humana.</strong> Ele nos inspira a não nos conformarmos com as injustiças e a não nos calarmos diante da opressão.
-        </p>
-        <p>
-            Em seu livro "A Fuga", ele relata sua trajetória de coragem, denunciando as atrocidades cometidas pela ditadura e pelo sistema prisional. Ele também <strong>mostra sua visão crítica e poética sobre a realidade brasileira, defendendo a necessidade de uma transformação social.</strong>
-        </p>
-        <a href="./src/pages/about.html" target="_blank" rel="noopener noreferrer" >Mais sobre mim</a>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Últimas Postagens</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="post-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Blog post image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm text-gray-500">15 Junho 2023</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Poesia</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Reflexões sobre liberdade</h3>
+                        <p class="text-gray-600 mb-4">
+                            Neste artigo, compartilho minhas reflexões sobre o conceito de liberdade após anos de luta e resistência...
+                        </p>
+                        
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:underline">Ler mais</a>
+                            <div class="flex items-center space-x-2">
+                                <button class="like-btn flex items-center" onclick="toggleLike(this)">
+                                    <i class="like-icon far fa-heart text-gray-400"></i>
+                                    <span class="ml-1 text-sm">24</span>
+                                </button>
+                                <span class="text-sm text-gray-500"><i class="far fa-comment"></i> 8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="post-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 animate-fade-in" style="animation-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Blog post image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm text-gray-500">2 Junho 2023</span>
+                            <span class="text-sm bg-red-100 text-red-800 px-2 py-1 rounded">Memórias</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">A resistência durante a ditadura</h3>
+                        <p class="text-gray-600 mb-4">
+                            Relatos pessoais sobre os anos mais difíceis de nossa história recente e como a arte foi fundamental para...
+                        </p>
+                        
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:underline">Ler mais</a>
+                            <div class="flex items-center space-x-2">
+                                <button class="like-btn flex items-center" onclick="toggleLike(this)">
+                                    <i class="like-icon far fa-heart text-gray-400"></i>
+                                    <span class="ml-1 text-sm">42</span>
+                                </button>
+                                <span class="text-sm text-gray-500"><i class="far fa-comment"></i> 15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="post-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 animate-fade-in" style="animation-delay: 0.4s;">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Blog post image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm text-gray-500">20 Maio 2023</span>
+                            <span class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded">Literatura</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">O processo criativo de um escritor</h3>
+                        <p class="text-gray-600 mb-4">
+                            Como transformo minhas experiências de vida em literatura? Neste artigo, descrevo meu método de trabalho...
+                        </p>
+                        
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:underline">Ler mais</a>
+                            <div class="flex items-center space-x-2">
+                                <button class="like-btn flex items-center" onclick="toggleLike(this)">
+                                    <i class="like-icon far fa-heart text-gray-400"></i>
+                                    <span class="ml-1 text-sm">18</span>
+                                </button>
+                                <span class="text-sm text-gray-500"><i class="far fa-comment"></i> 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-medium transition">Ver todas as postagens</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Single Post Example (hidden by default) -->
+    <div id="post-detail" class="hidden py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <button onclick="hidePostDetail()" class="mb-6 text-blue-600 hover:text-blue-800 flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i> Voltar ao blog
+            </button>
+            
+            <article class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Blog post image" class="w-full h-64 md:h-96 object-cover">
+                
+                <div class="p-6 md:p-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm text-gray-500">15 Junho 2023</span>
+                        <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Poesia</span>
+                    </div>
+                    
+                    <h1 class="text-2xl md:text-3xl font-bold mb-6">Reflexões sobre liberdade</h1>
+                    
+                    <div class="prose max-w-none mb-8">
+                        <p>Neste artigo, compartilho minhas reflexões sobre o conceito de liberdade após anos de luta e resistência. A liberdade não é apenas a ausência de grades físicas, mas a capacidade de pensar, criar e expressar-se sem medo.</p>
+                        
+                        <p>Durante meus anos na Ilha Grande, aprendi que a verdadeira prisão muitas vezes está na mente. Mesmo cercado por muros altos e guardas armados, mantive minha liberdade interior através da escrita e da poesia.</p>
+                        
+                        <blockquote class="border-l-4 border-blue-500 pl-4 italic my-4">
+                            "A liberdade é como o ar: só damos valor quando nos falta."
+                        </blockquote>
+                        
+                        <p>Hoje, vivendo em um país democrático, percebo que muitos de nós ainda carregamos correntes invisíveis. Medo de expressar opiniões, de ser diferente, de desafiar o status quo. A verdadeira liberdade exige coragem diária.</p>
+                        
+                        <p>Na minha obra "Eterno Amanhã", explorei esses temas através da poesia. Cada verso era um grito de liberdade, uma afirmação de que, mesmo nas circunstâncias mais difíceis, o espírito humano pode permanecer livre.</p>
+                    </div>
+                    
+                    <div class="flex justify-between items-center mb-8">
+                        <div class="flex items-center">
+                            <img src="./imgs/as.jpg" alt="André Borges" class="h-10 w-10 rounded-full mr-3">
+                            <div>
+                                <p class="font-medium">André Borges</p>
+                                <p class="text-sm text-gray-500">Jornalista e Escritor</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <button class="like-btn flex items-center" onclick="toggleLike(this)">
+                                <i class="like-icon far fa-heart text-gray-400"></i>
+                                <span class="ml-1">24</span>
+                            </button>
+                            <button class="flex items-center text-gray-500 hover:text-blue-500">
+                                <i class="far fa-share-square mr-1"></i>
+                                <span>Compartilhar</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-8">
+                        <h3 class="text-xl font-bold mb-6">Comentários (8)</h3>
+                        
+                        <div class="comment-section mb-8 space-y-6">
+                            <!-- Comment 1 -->
+                            <div class="flex">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="h-10 w-10 rounded-full mr-4">
+                                <div>
+                                    <div class="bg-gray-100 rounded-lg p-4">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span class="font-medium">Maria Silva</span>
+                                            <span class="text-xs text-gray-500">2 dias atrás</span>
+                                        </div>
+                                        <p class="text-gray-700">Adorei seu texto, André! Suas palavras ressoam profundamente em mim. A poesia realmente pode ser um instrumento de libertação.</p>
+                                    </div>
+                                    <div class="mt-2 ml-4 flex space-x-4 text-sm">
+                                        <button class="text-gray-500 hover:text-blue-500">Curtir</button>
+                                        <button class="text-gray-500 hover:text-blue-500">Responder</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Comment 2 -->
+                            <div class="flex">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="h-10 w-10 rounded-full mr-4">
+                                <div>
+                                    <div class="bg-gray-100 rounded-lg p-4">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span class="font-medium">Carlos Mendes</span>
+                                            <span class="text-xs text-gray-500">5 dias atrás</span>
+                                        </div>
+                                        <p class="text-gray-700">Excelente reflexão! Você já considerou fazer um curso ou palestra sobre esse tema? Tenho certeza que muitos estudantes se beneficiariam.</p>
+                                    </div>
+                                    <div class="mt-2 ml-4 flex space-x-4 text-sm">
+                                        <button class="text-gray-500 hover:text-blue-500">Curtir</button>
+                                        <button class="text-gray-500 hover:text-blue-500">Responder</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-lg font-medium mb-4">Deixe seu comentário</h4>
+                        <form class="space-y-4">
+                            <div>
+                                <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Escreva seu comentário..."></textarea>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User" class="h-10 w-10 rounded-full mr-3">
+                                    <span>João Oliveira</span>
+                                </div>
+                                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition">Publicar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
-    
-    
-    
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Sobre André Borges</h2>
+                
+                <div class="flex flex-col md:flex-row items-center mb-12">
+                    <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                        <img src="./imgs/as.jpg" alt="André Borges" class="rounded-full h-48 w-48 object-cover border-4 border-white shadow-xl">
+                    </div>
+                    <div class="md:w-2/3 md:pl-12">
+                        <p class="mb-4 text-lg">
+                            Sua história é um exemplo de como o povo pode e deve lutar pelos seus direitos e pela sua liberdade, usando todas as formas de resistência possíveis.
+                        </p>
+                        <p class="mb-4 text-lg">
+                            <strong class="text-red-300">Ele nos ensina que a luta política não é apenas uma questão ideológica, mas também de dignidade humana.</strong> Ele nos inspira a não nos conformarmos com as injustiças e a não nos calarmos diante da opressão.
+                        </p>
+                        <p class="text-lg">
+                            Em seu livro "A Fuga", ele relata sua trajetória de coragem, denunciando as atrocidades cometidas pela ditadura e pelo sistema prisional. Ele também <strong class="text-red-300">mostra sua visão crítica e poética sobre a realidade brasileira, defendendo a necessidade de uma transformação social.</strong>
+                        </p>
+                        <a href="./src/pages/about.html" class="inline-block bg-white hover:bg-gray-600 text-red-300 px-6 py-3 rounded-lg font-medium transition">Ver mais</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-gray-800">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-blue-900">Lançamento do livro 400x1</h3>
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-6 md:mb-0">
+                            <img src="./imgs/willianautografando.JPG" alt="Lançamento do livro 400x1" class="rounded-lg shadow-md w-full">
+                            <figcaption class="text-center mt-2 text-sm">André Borges e Willian da Silva Lima, este último autor do livro "400 contra um"</figcaption>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8">
+                            <p class="mb-4">
+                                O lançamento do livro "400 contra um" foi um marco importante na literatura de resistência brasileira. Neste evento histórico, André Borges compartilhou o palco com Willian da Silva Lima, autor da obra.
+                            </p>
+                            <p>
+                                O evento reuniu intelectuais, ativistas e jovens interessados em conhecer essa importante narrativa sobre a luta contra a opressão durante os anos de chumbo no Brasil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-16 newsletter-form text-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-8 md:p-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold mb-2">Assine nossa Newsletter</h2>
+                    <p class="text-lg opacity-90">Receba atualizações sobre novos livros, artigos e eventos diretamente no seu e-mail.</p>
+                </div>
+                
+                <form id="newsletter-form" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-white" placeholder="Seu nome" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-white" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="form-checkbox text-blue-500 bg-white bg-opacity-20 border border-white border-opacity-30 rounded focus:ring-white" required>
+                            <span class="ml-2">Concordo em receber comunicações por e-mail</span>
+                        </label>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Assinar agora
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Entre em Contato</h2>
+            
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Envie uma mensagem</h3>
+                    
+                    <form class="space-y-4">
+                        <div>
+                            <label for="contact-name" class="block mb-2 font-medium">Nome</label>
+                            <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Seu nome" required>
+                        </div>
+                        
+                        <div>
+                            <label for="contact-email" class="block mb-2 font-medium">E-mail</label>
+                            <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="seu@email.com" required>
+                        </div>
+                        
+                        <div>
+                            <label for="contact-subject" class="block mb-2 font-medium">Assunto</label>
+                            <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Assunto da mensagem" required>
+                        </div>
+                        
+                        <div>
+                            <label for="contact-message" class="block mb-2 font-medium">Mensagem</label>
+                            <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Escreva sua mensagem..." required></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
+                                Enviar mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Redes Sociais</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-blue-700 text-white p-3 rounded-full mr-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Facebook</h4>
+                                <a href="https://www.facebook.com/profile.php?id=100004435623416" class="text-blue-600 hover:underline">/andreborgessobrevivente</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-pink-600 text-white p-3 rounded-full mr-4">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Instagram</h4>
+                                <a href="https://www.instagram.com/andreborges9657/" class="text-blue-600 hover:underline">@andreborges9657</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-red-600 text-white p-3 rounded-full mr-4">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">YouTube</h4>
+                                <a href="https://www.youtube.com/@andreborgessobrevivente/videos" class="text-blue-600 hover:underline">André Borges Sobrevivente</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-6">
+                            <h3 class="text-xl font-semibold mb-4">Informações de Contato</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope mt-1 mr-3 text-gray-600"></i>
+                                    <span>contato@andreborges.com</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone-alt mt-1 mr-3 text-gray-600"></i>
+                                    <span>+55 (21) 99999-9999</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-600"></i>
+                                    <span>Rio de Janeiro, Brasil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">André Borges</h3>
+                    <p class="text-gray-400">
+                        Jornalista, escritor e poeta sobrevivente. Sua obra é um testemunho da resistência e da luta por liberdade.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#livros" class="text-gray-400 hover:text-white transition">Livros</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Livros</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./imgs/dailhagrandeaopoder.pdf" class="text-gray-400 hover:text-white transition">Da Ilha Grande ao Poder</a></li>
+                        <li><a href="./imgs/Eterno amanhã segunda edição (pronto para imprimir).pdf" class="text-gray-400 hover:text-white transition">Eterno Amanhã</a></li>
+                        <li><a href="https://www.amazon.com.br/Fuga-Rumo-Armada-Contra-Ditadura/dp/8564833336" class="text-gray-400 hover:text-white transition">A Fuga</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">A Viagem</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Assine para receber atualizações sobre novos livros, artigos e eventos.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2023 André Borges. Todos os direitos reservados.
+                    </p>
+                    
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com/profile.php?id=100004435623416" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/andreborges9657/" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@andreborgessobrevivente/videos" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Like button functionality
+        function toggleLike(button) {
+            const likeIcon = button.querySelector('.like-icon');
+            const likeCount = button.querySelector('span');
+            
+            if (likeIcon.classList.contains('far')) {
+                likeIcon.classList.remove('far');
+                likeIcon.classList.add('fas', 'active-like');
+                likeCount.textContent = parseInt(likeCount.textContent) + 1;
+            } else {
+                likeIcon.classList.remove('fas', 'active-like');
+                likeIcon.classList.add('far');
+                likeCount.textContent = parseInt(likeCount.textContent) - 1;
+            }
+        }
+        
+        // Newsletter form submission
+        const newsletterForm = document.getElementById('newsletter-form');
+        
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // Here you would typically send this data to your server
+            console.log('Newsletter subscription:', { name, email });
+            
+            // Show success message
+            alert(`Obrigado, ${name}! Você foi inscrito com sucesso em nossa newsletter.`);
+            
+            // Reset form
+            newsletterForm.reset();
+        });
+        
+        // Show post detail (for demo purposes)
+        function showPostDetail() {
+            document.getElementById('blog').classList.add('hidden');
+            document.getElementById('post-detail').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function hidePostDetail() {
+            document.getElementById('blog').classList.remove('hidden');
+            document.getElementById('post-detail').classList.add('hidden');
+            window.scrollTo({ top: document.getElementById('blog').offsetTop, behavior: 'smooth' });
+        }
+        
+        // For demo: make blog post titles clickable to show detail view
+        document.querySelectorAll('.post-card h3').forEach(title => {
+            title.style.cursor = 'pointer';
+            title.addEventListener('click', showPostDetail);
+        });
+    </script>
 </body>
 </html>

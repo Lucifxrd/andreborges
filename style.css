@@ -1,6 +1,7 @@
-
-
-
+body {
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
 
 .scrollport {
     mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
@@ -13,292 +14,38 @@
     overflow-y: hidden;
 }
 
-
-
-
-
-
-
-nav>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-nav>ul>li {
-    float: left;
-    
-}
-nav>ul>li>a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1.4rem 1.6rem;
-    text-decoration: none;
-    font-size: 4vh;
-}
-nav>ul>li a:hover {
-    background-color: #111;
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-
-}
-html, body {
-    scroll-behavior: smooth;
-    scroll-snap-type: y;
-    font-size: 62.5%;
-  }
-  
-
-  @media (max-width: 800px) {
-    html, body {
-    overflow-x: hidden;
-    }
-    
-  }
-  
-@media (max-width: 550px) {
-    header>img {
-        justify-self: right;
-        width: 50vw;
-        height: 300%;
-        border-radius: 30%;
-        outline: solid rgb(13, 13, 15) .2rem;
-        position: inherit;
-    }
-}
-.mainsect>h1 {
-    color: red;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10vh;
-    margin-top: 1rem;
-}
-.mainsect>h1>span {
-    background-color: rgba(0, 0, 0, 0.103);
-
-}
-.mainsect {
-    background-image: url('./imgs/OIG.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(61, 61, 61, 0.397);
-    width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-}
-header>img {
-    margin-top: 10vh;
-    height: 25vh;
-    border-radius: 50%;
-    outline: solid rgb(82, 82, 83) .2rem;
-    margin-left: 3rem;
-
+.comment-section {
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
-
-.andreinfo {
-
-    background-image: url('./imgs/OIG.jpg');
-    
-    background-repeat: no-repeat;
-    height: 10rem;
-    overflow: visible;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    
+.newsletter-form {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
 }
 
-.andreinfo>ul {
-    margin-right: 20vw;
-    margin-top: 18vh;
-    padding: auto 0;
-    font-size: 1.2rem;
-    width: 20vw;
-    list-style-type: none;
-    
-}
-.andreinfo>ul>li {
-    width: 300%;
-}
-.andreinfo>ul>li>p {
-    width: 20vw;
-}
-.andreinfo>figcaption {
-    align-self:flex-end;
-    text-overflow: clip;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3vh;
-}
-.sobre {
-    text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    color: white;
-    background-color: #0104a7;
-    outline: aqua .1rem solid;
-    border-radius: 5%;
-}
-.sobre>h1 {
-    font-size: 6vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.sobre>p {
-    font-size: 1.4rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.sobre>a{
-    color:blue;
-    background-color:rgb(140, 7, 7);
-    padding-inline: 10vw;
-     font-size: 4vh;
-}
-.andreinfo>ul>li>p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vh;
-    font-weight: 300;
-    padding-top: 1vh;
-    padding-bottom:2vh;
-}
-.andreinfo>ul>li>h2{
-    font-family: cursive;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.livrosdiv {
-    justify-content: center;
-    display: inline-flex;
-    gap: 5vw;
-    transform:skew(33) ;
-    height: 30rem;
-    width: 100%;
-    border-radius: 5%;
-    margin-inline: auto;
-    margin-bottom: 3rem;
-    padding-top: 2vh;
-    overflow: hidden;
-    
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
 }
-.livro1 {
-    display: flex;
-    aspect-ratio: 1;
-    block-size: 30rem;
-    width: 230vw;
-    height: 60vh;
-    background-color: rgba(1, 1, 20, 0.884);
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 5%;
-    animation: scroll 20s linear infinite; /* para animar o deslocamento horizontal  */
 
+.like-btn:hover .like-icon {
+    transform: scale(1.2);
 }
-.livro1>h3 {
-    color: red;
-    font-size: 2vw;
 
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+.like-icon {
+    transition: all 0.3s ease;
 }
-.livro1>p {
-    width: 100%;
-    font-family: cursive;
-    font-size: 2vh;
-    color: white;
-    overflow-y: scroll;
-}
-.livrosdiv>p>span {
-    background-color: aliceblue;
-    line-height: 1.5;
 
-}
-.livro1>a>img {
-    width: 30%;
-    height: 30vh;
-    display: flex;
-    margin-inline: auto;
-    margin-block: 2rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 0 0;
-}
-footer>h2 {
-    color: red;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-}
-footer {
-    padding-block: 5%;
-    background-color: rgba(22, 104, 2, 0.836);
-    text-align: center;
-    margin-inline: auto;
-    margin-top: 25vh;
-    outline: rgb(80, 5, 5) solid 1rem;
-    width: 100%;
-}
-footer>div {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vw;
-    padding-top: 3vw;
-    justify-content: center;
-}
-footer>div>a {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 2vw;
-}
-footer>div>a>img {
-    width: 10vw;
-    animation: light linear infinite 5S;
-    height: 100%;
-    outline: red solid .3rem;
-    border-radius: 50%;
-}
-footer>p{
-    color:rgb(78, 61, 61);
-    font-size: .8rem;
-}
-@keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-700px); } /* para mover o conteúdo até o final do scrollport */
-  }
-
-@keyframes light {
-    0% {
-        filter: drop-shadow(16px 16px 20px red);
-    }
-    10% {
-        filter: drop-shadow(16px 16px 20px red) invert(10%);
-    }
-    25% {
-        filter: drop-shadow(16px 16px 20px red) invert(20%);
-    }
-    45% {
-        filter: drop-shadow(16px 16px 20px red) invert(50%);
-    }
-    60% {
-        filter: drop-shadow(16px 16px 20px red) invert(60%);
-    }
-    90% {
-        filter: drop-shadow(16px 16px 20px red) invert(75%);
-    }
-    100% {
-        filter: drop-shadow(16px 16px 20px red) invert(100%);
-    }
+.active-like {
+    color: #ef4444;
 }
